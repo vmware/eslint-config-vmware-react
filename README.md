@@ -1,23 +1,31 @@
-
 # eslint-config-vmware-react
+
+VMware's ESLint config extending eslint-config-react-app.
 
 ## Overview
 
-## Try it out
+Inspired by [`eslint-config-airbnb-typescript-prettier`](https://github.com/toshi-toma/eslint-config-airbnb-typescript-prettier) but extends [`eslint-config-react-app`](https://www.npmjs.com/package/eslint-config-react-app).
 
-### Prerequisites
+Mostly uses "WARN" level to allow a better DX with eslint-loader.
+Code is transpiled when warnings are present but not when errors exists.
 
-* Prereq 1
-* Prereq 2
-* Prereq 3
+In CI treat warnings as errors with ESLint option: `--max-warnings 0`.
 
-### Build & Run
+# How to use
 
-1. Step 1
-2. Step 2
-3. Step 3
+Install `eslint`, `typescript` with `@vmw/eslint-config-vmware-react`.
 
-## Documentation
+```bash
+$ npm install eslint typescript eslint-config-vmware-react --save-dev
+```
+
+and put into your `.eslintrc.js` file:
+
+```js
+module.exports = {
+  extends: '@vmw/vmware-react',
+};
+```
 
 ## Contributing
 
@@ -27,3 +35,5 @@ signed as described on that page. Your signature certifies that you wrote the pa
 as an open-source patch. For more detailed information, refer to [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
+
+Open source [licensed as MIT](https://github.com/vmware/eslint-config-vmware-react/blob/master/LICENSE).
