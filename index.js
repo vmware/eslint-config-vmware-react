@@ -151,7 +151,10 @@ module.exports = {
     'import/no-namespace': WARN,
     'import/no-nodejs-modules': WARN,
     'import/no-self-import': WARN,
-    'import/no-unassigned-import': [WARN, { allow: ['**/*.{css,less,sass}'] }],
+    'import/no-unassigned-import': [
+      WARN,
+      { allow: ['**/*.{css,less,sass,scss}'] },
+    ],
     'import/no-unresolved': WARN,
     'import/no-unused-modules': WARN,
     'import/no-useless-path-segments': WARN,
