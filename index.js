@@ -11,10 +11,9 @@ module.exports = {
     'react-app',
     'plugin:import/warnings',
     'plugin:jsx-a11y/recommended',
-    'prettier',
-    'prettier/react',
-    'prettier/@typescript-eslint',
+    'plugin:prettier/recommended',
   ],
+  parser: '@typescript-eslint/parser',
   plugins: [
     'react',
     'react-hooks',
@@ -50,7 +49,15 @@ module.exports = {
     },
     {
       files: ['**/*.ts?(x)'],
-      plugins: ['typescript-sort-keys'],
+      extends: [
+        'react-app',
+        'plugin:import/warnings',
+        'eslint:recommended',
+        'plugin:@typescript-eslint/eslint-recommended',
+        'plugin:@typescript-eslint/recommended',
+        'plugin:prettier/recommended',
+      ],
+      plugins: ['@typescript-eslint', 'typescript-sort-keys'],
       settings: {
         'import/parsers': {
           '@typescript-eslint/parser': ['.ts', '.tsx'],
@@ -109,7 +116,7 @@ module.exports = {
     ],
     'no-unneeded-ternary': WARN,
     'no-var': WARN,
-
+    'one-var': [WARN, 'never'],
     'prefer-const': WARN,
     'prefer-rest-params': WARN,
     'prefer-spread': WARN,
