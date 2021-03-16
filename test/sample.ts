@@ -1,7 +1,7 @@
 /* Copyright 2020-2021 VMware, Inc.
  * SPDX-License-Identifier: MIT */
 
-export function sum(a: number, b: number) {
+export function sum(a: number, b: number): number {
   return a + b;
 }
 
@@ -12,7 +12,7 @@ interface Person {
   name: string;
 }
 
-export function greeter(person: Person) {
+export function greeter(person: Person): string {
   return `My name is ${person.name}. I am ${person.age} years old.`;
 }
 
