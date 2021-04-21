@@ -12,6 +12,7 @@ module.exports = {
     'plugin:import/warnings',
     'plugin:jsx-a11y/recommended',
     'plugin:prettier/recommended',
+    'prettier', // prettier (eslint-config-prettier) must be the last one
   ],
   parser: '@typescript-eslint/parser',
   plugins: [
@@ -56,6 +57,7 @@ module.exports = {
         'plugin:@typescript-eslint/eslint-recommended',
         'plugin:@typescript-eslint/recommended',
         'plugin:prettier/recommended',
+        'prettier', // prettier (eslint-config-prettier) must be the last one
       ],
       plugins: ['@typescript-eslint', 'typescript-sort-keys'],
       settings: {
