@@ -8,7 +8,7 @@ const ERROR = 2;
 /* eslint-disable sort-keys */
 module.exports = {
   extends: [
-    'react-app',
+    './cra/index',
     'plugin:import/warnings',
     'plugin:jsx-a11y/recommended',
     'plugin:prettier/recommended',
@@ -51,7 +51,7 @@ module.exports = {
     {
       files: ['**/*.ts?(x)'],
       extends: [
-        'react-app',
+        './cra/index',
         'plugin:import/warnings',
         'eslint:recommended',
         'plugin:@typescript-eslint/eslint-recommended',
