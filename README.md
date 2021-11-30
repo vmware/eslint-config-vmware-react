@@ -1,10 +1,10 @@
 # eslint-config-vmware-react
 
-VMware's ESLint config extending eslint-config-react-app.
+VMware's ESLint config based on eslint-config-react-app.
 
 ## Overview
 
-Inspired by [`eslint-config-airbnb-typescript-prettier`](https://github.com/toshi-toma/eslint-config-airbnb-typescript-prettier) but extends [`eslint-config-react-app`](https://www.npmjs.com/package/eslint-config-react-app).
+Inspired by [`eslint-config-airbnb-typescript-prettier`](https://github.com/toshi-toma/eslint-config-airbnb-typescript-prettier) but based on [`eslint-config-react-app`](https://www.npmjs.com/package/eslint-config-react-app).
 
 Mostly uses "WARN" level to allow a better DX with eslint-loader.
 Code is transpiled when warnings are present but not when errors exists.
